@@ -2,7 +2,7 @@ name: localization
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.19.6 <3.0.0'
+  sdk: ">=2.19.6 <3.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -29,14 +29,19 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.2
+  easy_localization: ^3.0.0
+  easy_localization_loader: ^1.0.1+1
   flutter:
     sdk: flutter
-  flutter_localization: 
+  flutter_localization: null
+  font_awesome_flutter: ^10.4.0
   intl: ^0.17.0
-  provider: ^6.0.5
+  provider: ^6.0.0
 
 dev_dependencies:
   flutter_lints: ^2.0.0
+  
+
   flutter_test:
     sdk: flutter
 
@@ -51,8 +56,9 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/translations/
+    - resources/langs/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
