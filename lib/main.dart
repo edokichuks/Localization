@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:localization/src/features/home/views/home.dart';
 import 'package:localization/l10n/l10n.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:multiple_localization/multiple_localization.dart';
+// import 'package:multiple_localization/src/multiple_localization.dart';
 // import 'package:flutter_localizations/src/material_localizations.dart';
 // import 'package:flutter_localizations/src/cupertino_localizations.dart';
 // import 'package:flutter_localizations/src/widgets_localizations.dart';
@@ -37,7 +41,18 @@ class _MyAppState extends State<MyApp> {
       ),
       // locale: const Locale('en'), //use for just one language
       supportedLocales: L10n.all,
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      
+      localizationsDelegates:
+      // const [
+      //   AppLocalizations.delegate,
+      //   GlobalMaterialLocalizations.delegate,
+      //   GlobalCupertinoLocalizations.delegate,
+      //   GlobalWidgetsLocalizations.delegate,
+      // ],
+      AppLocalizations.localizationsDelegates,
+   
+      //   // Other delegates
+      // ],
       // Or this
       //  const [
       //   AppLocalizations.delegate,
