@@ -1,3 +1,10 @@
-description: My first Fluttium flow.
+description: Localization Home flow.
 ---
-- log: "Hello World!"
+- log: "Testing Buttons"
+- pressOn: "French"
+- log: "Waiting Completed"
+- pressOn: "English"
+- pressOn: "French"
+- expectVisible: 'French'
+- expectVisible: 'English'
+- takeScreenshot: 'C:/Users/CHUKSCO/flutterprojects/home_localization.png'
