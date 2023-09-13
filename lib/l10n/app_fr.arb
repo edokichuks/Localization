@@ -1,8 +1,6 @@
 {
-    "language": "française",
-    "localization_test": "Essai de localisation",
-    "hello": "Bonjour {user}",
-    "localization" : "Barre d'application de localisation"
-
-
+  "language": "française",
+  "localization_test": "Essai de localisation",
+  "hello": "Bonjour {user}",
+  "localization": "Barre d'application de localisation"
 }

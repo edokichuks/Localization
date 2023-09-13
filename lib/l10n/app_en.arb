@@ -1,24 +1,23 @@
 {
-    "language": "English",
-    "@language": {
-        "description": "The current language"
-    },
-    "localization_test": "Localization test",
-    "@localization_test" : {
-        "description" : "Testing purposes"
-    },
-
-    "hello": "Hello {user}",
-    "@hello":{
-        "description" : "A welcome message",
-        "placeholders" :{
-            "user": {
-                "type": "String"
-            }
-        }
-    },
-    "localization" : "Localization",
-    "@localization" : {
-        "description": "Localization AppBar"
+  "language": "English",
+  "@language": {
+    "description": "The current language"
+  },
+  "localization_test": "Localization test",
+  "@localization_test": {
+    "description": "Testing purposes"
+  },
+  "hello": "Hello {user}",
+  "@hello": {
+    "description": "A welcome message",
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
     }
+  },
+  "localization": "Localization",
+  "@localization": {
+    "description": "Localization AppBar"
+  }
 }
